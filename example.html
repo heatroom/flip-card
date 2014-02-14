@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flipbox</title>
+  <link rel="stylesheet" type="text/css" href="build/build.css">
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 150px;
+    }
+
+    #card {
+      width: 100px;
+      height: 100px;
+    }
+
+    .back,
+    .front {
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      background: #eee;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    .back {
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+  <script src="build/build.js"></script>
+
+  <div id="card">
+    <div>
+      <div class="front">front</div>
+      <div class="back">back</div>
+    </div>
+  </div>
+
+  <script>
+    var card = document.getElementById('card');
+    var Flipcard = require('flip-card');
+    var card = new Flipcard(card);
+
+    card.el.onclick = function(){
+      card.flip();
+    };
+  </script>
+</body>
+</html>

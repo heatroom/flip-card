@@ -1,0 +1,25 @@
+{
+  "name": "flip-card",
+  "repo": "heatroom/flip-card",
+  "description": "Double-sided flip card using css transformations.",
+  "version": "0.0.1",
+  "keywords": [
+    "flipcard",
+    "ui",
+    "css3",
+    "3d"
+  ],
+  "dependencies": {
+    "component/classes": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "flip-card.css"
+  ]
+}
